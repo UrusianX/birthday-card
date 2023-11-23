@@ -12,7 +12,7 @@ body {
   
   .card-container {
     perspective: 1000px;
-    width: 70vw; /* Ajustei a largura do card-container para 70% da largura da tela */
+    width: 90vw; /* Reduzi a largura do card-container para melhor se ajustar em telas pequenas */
     margin: 0 auto;
   }
   
@@ -38,6 +38,7 @@ body {
   .content {
     padding: 20px;
     font-size: 24px;
+    color: #fff;
   }
   
   /* Adicionando estilo nerd para o texto */
@@ -57,7 +58,7 @@ body {
   /* Estilo mais elaborado e nerd para o texto de aniversário */
   .content p.nerdy {
     font-family: 'Courier New', monospace;
-    font-size: 28px;
+    font-size: 22px; /* Reduzi o tamanho da fonte para melhor se ajustar em telas pequenas */
     color: #00ff00;
   }
   
@@ -74,7 +75,7 @@ body {
   /* Adicionando estilos para dispositivos móveis */
   @media screen and (max-width: 600px) {
     .card-container {
-      width: 90vw;
+      width: 95vw; /* Reduzi ainda mais a largura para melhorar a responsividade em telas muito pequenas */
     }
   
     .content {
@@ -82,7 +83,6 @@ body {
     }
   
     .content p.nerdy {
-      font-size: 24px;
+      font-size: 20px; /* Ajustei o tamanho da fonte nerd para melhor se ajustar em telas pequenas */
     }
   }
-  
